@@ -32,9 +32,12 @@ tags:
 - Payments Canada
 created: '2026-07-23'
 modified: '2026-07-23'
+enriched: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/brim-financial-domain-security.yml
 - type: Website
   url: https://brimfinancial.com/
 - type: About
@@ -47,6 +50,14 @@ common:
   url: https://brimfinancial.com/legal
 - type: Support
   url: https://brimfinancial.com/contact-us
+- type: Blog
+  url: https://brimfinancial.com/inthenews
+- type: Careers
+  url: https://brimfinancial.com/careers
+- type: Login
+  url: https://webportal.brimfinancial.com/login
+- type: DomainSecurity
+  url: security/brim-financial-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/brim-financial-inc/
 - type: Twitter
