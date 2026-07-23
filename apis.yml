@@ -1,0 +1,56 @@
+aid: brim-financial
+url: https://raw.githubusercontent.com/api-evangelist/brim-financial/refs/heads/main/apis.yml
+name: Brim Financial
+kind: company
+description: >-
+  Brim Financial is a Toronto-based Canadian fintech (founded 2017) that operates
+  a fully-integrated, API-first credit-card Platform-as-a-Service (PaaS). It is
+  not a chartered Schedule I or Schedule II bank; it describes itself as the only
+  fintech in North America licensed to issue credit cards, and it delivers
+  Credit-Cards-as-a-Service (CCaaS), loyalty/rewards, BNPL, and money-movement
+  infrastructure to banks, credit unions, fintechs, and large brands (clients
+  include Manulife Bank, Laurentian Bank, Canadian Western Bank, Affinity Credit
+  Union, and Air France-KLM). Brim is registered under Canada's Retail Payment
+  Activities Act (RPAA) to Bank of Canada standards and was admitted to Payments
+  Canada as a payment service provider, and has partnered with Mastercard to
+  embed open-banking capabilities. Although Brim markets a comprehensive API-first
+  platform, that API is delivered to enterprise/embedded-finance partners through
+  a commercial onboarding relationship: as of this review there is no public,
+  self-serve first-party developer portal, no downloadable OpenAPI/Swagger, and
+  no operational consumer-driven-banking (open-banking) API, consistent with
+  Canada's voluntary, not-yet-live open-finance framework.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Canada
+- Fintech
+- Credit Cards
+- Platform as a Service
+- Payments
+- Embedded Finance
+- Payments Canada
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://brimfinancial.com/
+- type: About
+  url: https://brimfinancial.com/about-us
+- type: Security
+  url: https://brimfinancial.com/security
+- type: PrivacyPolicy
+  url: https://brimfinancial.com/privacy
+- type: TermsOfService
+  url: https://brimfinancial.com/legal
+- type: Support
+  url: https://brimfinancial.com/contact-us
+- type: LinkedIn
+  url: https://www.linkedin.com/company/brim-financial-inc/
+- type: Twitter
+  url: https://twitter.com/BrimFinancial/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

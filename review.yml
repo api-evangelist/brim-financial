@@ -1,0 +1,104 @@
+aid: brim-financial
+name: Brim Financial
+review:
+  question: Does Brim Financial expose a public, self-serve first-party developer API or portal?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Brim Financial is a Toronto-based Canadian fintech and licensed credit-card
+    issuer that markets a "fully-integrated, API-first" credit-card
+    Platform-as-a-Service (CCaaS) and embedded-finance stack. Despite the
+    API-first positioning, there is NO public, self-serve first-party developer
+    portal. The conventional developer subdomains do not resolve
+    (developer., docs., api., developers.brimfinancial.com all return DNS
+    NXDOMAIN), the marketing site publishes no developer/API-reference section,
+    and no OpenAPI/Swagger/Postman artifact is publicly downloadable. Brim's API
+    is delivered to enterprise and embedded-finance partners (banks, credit
+    unions, fintechs, brands such as Manulife Bank, Laurentian Bank, Canadian
+    Western Bank, Affinity Credit Union, Air France-KLM) through a commercial
+    onboarding relationship, so documentation and authentication details are
+    partner-gated and not observable publicly. No authentication model
+    (OAuth2/OIDC/API-key/mTLS) could be confirmed from public materials because
+    no public API reference exists. No spec was harvested; the openapi/ directory
+    is intentionally empty. This is an identity-only ("built-stub") record and is
+    the honest result for a partner-gated, API-first fintech.
+  charterType: >-
+    Non-bank fintech; licensed North American credit-card issuer. Not a
+    Schedule I or Schedule II bank. RPAA-registered (Retail Payment Activities
+    Act, Bank of Canada standards) and admitted to Payments Canada as a payment
+    service provider (PSP).
+  openFinancePosture:
+    firstPartyDeveloperPortal: false
+    developerPortalProbed:
+      - host: developer.brimfinancial.com
+        status: DNS NXDOMAIN (does not resolve)
+      - host: docs.brimfinancial.com
+        status: DNS NXDOMAIN (does not resolve)
+      - host: api.brimfinancial.com
+        status: DNS NXDOMAIN (does not resolve)
+      - host: developers.brimfinancial.com
+        status: DNS NXDOMAIN (does not resolve)
+    downloadableOpenAPI: false
+    specProvenance: none
+    fdxParticipant: false
+    section1033Posture: not-applicable-canadian-entity
+    consumerDrivenBanking: >-
+      No published first-party consumer-driven-banking / open-banking API.
+      Canada's federal Consumer-Driven Banking framework (Budget 2024 / Fall
+      Economic Statement 2024, overseen by the FCAC) is legislated but not yet
+      operational, so first-party open-finance access is voluntary and, for
+      Brim, not exposed publicly.
+    interacRtrParticipation: >-
+      Admitted to Payments Canada as a payment service provider; relevant to
+      Real-Time Rail (RTR) / payments modernization. No public Interac or RTR
+      API is documented by Brim.
+    openBankingPartnership: >-
+      Partnered with Mastercard to embed open-banking capabilities into the
+      Brim platform (partner-delivered capability, not a public Brim API).
+    aggregatorAccess: >-
+      No first-party consumer-data-access API is documented. Consumer financial
+      data access in Canada today remains largely aggregator/screen-scraping
+      based (e.g. Flinks, Plaid, MX, Salt Edge); no specific Brim aggregator
+      integration is publicly documented.
+    authModel: unknown-partner-gated
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: >-
+        Brim describes a comprehensive backend API, but no public REST API
+        reference, base URL, or endpoint list is published; access is
+        partner-gated via commercial onboarding.
+    - protocol: OpenAPI
+      documented: false
+      note: No publicly downloadable OpenAPI/Swagger specification was found.
+sources:
+  - url: https://brimfinancial.com/
+    type: Website
+    note: >-
+      Homepage confirms API-first CCaaS/PaaS positioning, RPAA registration,
+      Payments Canada PSP membership, and licensed-card-issuer status. No
+      developer/API-reference links.
+  - url: https://brimfinancial.com/about-us
+    type: About
+    note: Company background; founded 2017, Toronto, Canada.
+  - url: https://brimfinancial.com/security
+    type: Security
+    note: Security posture page.
+  - url: https://brimfinancial.com/PaymentsCanada
+    type: Documentation
+    note: Payments Canada payment-service-provider membership.
+  - url: https://apitracker.io/a/brimfinancial
+    type: ThirdParty
+    note: >-
+      Third-party API index profile; fields for developer docs, SDKs, auth, and
+      OpenAPI are effectively empty/unconfirmed. No developer portal URL listed.
+actions:
+  openapiHarvested: false
+  apisListed: 0
+  reason: >-
+    No public first-party developer portal or downloadable API specification
+    exists. Recorded as an honest identity-only (built-stub) provider profile
+    for a partner-gated, API-first Canadian fintech.
