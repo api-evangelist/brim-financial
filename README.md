@@ -1,4 +1,4 @@
-# Brim Financial (brim-financial)
+# Brim Financial
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,51 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Brim Financial is a Toronto-based Canadian fintech (founded 2017) that operates a fully-integrated, API-first credit-card Platform-as-a-Service (PaaS). It is not a chartered Schedule I or Schedule II bank; it describes itself as the only fintech in North America licensed to issue credit cards, and it delivers Credit-Cards-as-a-Service (CCaaS), loyalty/rewards, BNPL, and money-movement infrastructure to banks, credit unions, fintechs, and large brands. Brim is registered under Canada's Retail Payment Activities Act (RPAA) and was admitted to Payments Canada as a payment service provider.
+Brim Financial is a Toronto-based Canadian fintech (founded 2017) that operates a fully-integrated, API-first credit-card Platform-as-a-Service (PaaS). It is not a chartered Schedule I or Schedule II bank; it describes itself as the only fintech in North America licensed to issue credit cards, and it delivers Credit-Cards-as-a-Service (CCaaS), loyalty/rewards, BNPL, and money-movement infrastructure to banks, credit unions, fintechs, and large brands (clients include Manulife Bank, Laurentian Bank, Canadian Western Bank, Affinity Credit Union, and Air France-KLM). Brim is registered under Canada's Retail Payment Activities Act (RPAA) to Bank of Canada standards and was admitted to Payments Canada as a payment service provider, and has partnered with Mastercard to embed open-banking capabilities. Although Brim markets a comprehensive API-first platform, that API is delivered to enterprise/embedded-finance partners through a commercial onboarding relationship: as of this review there is no public, self-serve first-party developer portal, no downloadable OpenAPI/Swagger, and no operational consumer-driven-banking (open-banking) API, consistent with Canada's voluntary, not-yet-live open-finance framework.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/brim-financial/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/brim-financial/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Canada · Fintech · Credit Cards · Platform-as-a-Service · Payments · Embedded Finance · Payments Canada
 
-## Tags
+## Brim Financial on APIs.io
 
-- Financial Services
-- Banking
-- Canada
-- Fintech
-- Credit Cards
-- Platform as a Service
-- Payments
-- Embedded Finance
-- Payments Canada
+Everything profiled for Brim Financial is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/brim-financial/](https://apis.io/providers/brim-financial/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-Brim markets a comprehensive, "API-first" credit-card and embedded-finance platform, but that API surface is delivered to enterprise partners through a commercial onboarding relationship. As of this review there is **no public, self-serve first-party developer portal** (the usual `developer.` / `docs.` / `api.` / `developers.brimfinancial.com` subdomains do not resolve), **no publicly downloadable OpenAPI/Swagger specification**, and **no operational consumer-driven-banking (open-banking) data API**. This is consistent with the honest state of Canadian open finance: the federal Consumer-Driven Banking framework (Budget 2024 / Fall Economic Statement 2024, overseen by the FCAC) is legislated but not yet operational, so first-party API access remains voluntary and, for Brim, partner-gated. No first-party public APIs are listed for this record.
+Authentication, trust centre, and vulnerability disclosure.
 
-## Open Finance & Payments Posture
+- [Brim Financial Domain Security](https://apis.io/security/brim-financial/brim-financial-domain-security/)
 
-- **Charter / status:** Non-bank fintech and licensed credit-card issuer; RPAA-registered (built to Bank of Canada standards) and admitted to Payments Canada as a payment service provider (PSP).
-- **Canadian rails:** Payments Canada member as a PSP; relevant to Real-Time Rail (RTR) / modernization participation. No public Interac or RTR API is documented by Brim.
-- **Consumer-Driven Banking (CDB):** No published first-party CDB/open-banking API; the Canadian framework is not yet live.
-- **Open banking:** Partnered with Mastercard to embed open-banking capabilities into the platform (partner-delivered, not a public Brim API).
-- **Aggregator access:** No documented first-party consumer-data access API; consumer data access in Canada today remains largely aggregator-based.
+## Where to find this API
 
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://brimfinancial.com/)
-- [About](https://brimfinancial.com/about-us)
-- [Security](https://brimfinancial.com/security)
-- [Privacy Policy](https://brimfinancial.com/privacy)
-- [Terms of Service](https://brimfinancial.com/legal)
 - [Support](https://brimfinancial.com/contact-us)
-- [LinkedIn](https://www.linkedin.com/company/brim-financial-inc/)
-- [Twitter](https://twitter.com/BrimFinancial/)
+- [Blog](https://brimfinancial.com/inthenews)
+- [Security](https://brimfinancial.com/security)
+- [Terms of service](https://brimfinancial.com/legal)
+- [Privacy policy](https://brimfinancial.com/privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 4.0** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 6.6 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.4** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/brim-financial/](https://apis.io/providers/brim-financial/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Brim Financial: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/brim-financial/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
